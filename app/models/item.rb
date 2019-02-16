@@ -12,5 +12,5 @@ class Item < ApplicationRecord
   has_many :want_users, through: :wants, source: :user
   
   has_many :haves, class_name: 'Have'
-  has_many :have_users, through: :haves, source: :item
+  has_many :have_users, through: :haves, source: :user
 end
